@@ -1,0 +1,43 @@
+// Posts Style
+.postImg {
+	width: 100%;
+	height: 300px;
+	background-color: $color-3;
+	overflow: hidden;
+	.bigImg {
+		width: 100%;
+	}
+	.smallImg {
+		width: 100%;
+	}
+}
+.postBody {
+	width: 100%;
+	padding: 10px;
+	background-color: $color-3;
+	color: $color-5;
+}
+// My Post Details Style
+.posttitle:hover .editbtn, .rent:hover .editbtn {
+	display: inline-block;
+}
+.editbtn {
+	font-size: 14px;
+	margin-left: 5px;
+	text-decoration: underline !important;
+	display: none;
+	color: $color-4 !important;
+}
+.rent {
+	text-align: center;
+}
+.postImageBody {
+	background-color: $color-2;
+	text-align: center;
+	color: $color-4;
+}
+.posticon {
+		// padding: 10px;
+		background-color: $color-1;
+		width: 100% !important;
+	}

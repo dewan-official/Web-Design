@@ -1,0 +1,1201 @@
+<!-- Sign Up  Modal Start From Here -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  	<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content modal-content-custom">
+      		<div class="modal-header">
+				<img src="img/logo.png" class="logLogo" width="75" height="75">
+				<div>
+					<h1 class="mb-0">Bari Bhara</h1>
+					<p class="d-block mb-0">Registation</p>
+				</div>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        	<span aria-hidden="true">&times;</span>
+		        </button>
+      		</div>
+      		<div class="modal-body">
+				<form action="func/action.php" method="POST">
+					<div class="form-group mb-2">
+					    <label for="form001210">First Name</label>
+					    <input type="name" name="fname" class="form-control" id="form001210" placeholder="First Name" required>
+					</div>
+					<div class="form-group mb-3">
+					    <label for="form001211">Last Name</label>
+					    <input type="lname" name="lname" class="form-control" id="form001211" placeholder="Last Name" required>
+					</div>
+					<div class="form-group mb-2">
+					    <label for="form001212">Email</label>
+					    <input type="email" name="email" class="form-control" id="form001212" placeholder="Email" required>
+					</div>
+					<div class="form-group mb-3">
+					    <label for="form001213">Password</label>
+					    <input type="Password" name="password" class="form-control" id="form001213" placeholder="Password" required>
+					</div>
+					<div class="form-group mb-3">
+					    <label for="form001214">Re-Password</label>
+					    <input type="Password" name="repassword" class="form-control" id="form001214" placeholder="Re-Enter Password" required>
+					</div>
+					<div class="form-check mb-2">
+					  	<input class="form-check-input" type="checkbox" name="atc" value="Accept" id="form001215" required>
+					  	<label class="form-check-label" for="form001215">
+					   	Accept accept <a href="#" style="color:red !important;">terms and conditions</a> 
+					  	</label>
+					</div>
+					<button type="submit" name="signup" class="btn btn-primary mb-2">Register</button>
+					<a href="#" class="btn btn-info mb-2" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#login">Log In</a>
+				</form>
+      		</div>
+    	</div>
+  	</div>
+</div>
+
+<!-- Login Modal Start From Here -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  	<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content modal-content-custom">
+      		<div class="modal-header">
+				<img src="img/logo.png" class="logLogo" width="75" height="75">
+				<h1>Bari Bhara</h1>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        	<span aria-hidden="true">&times;</span>
+		        </button>
+      		</div>
+      		<div class="modal-body">
+				<form action="func/action.php" method="POST">
+					<div class="form-group mb-2">
+					    <label for="formGroupExampleInput1">Email</label>
+					    <input type="Email" name="email" class="form-control" id="formGroupExampleInput1" placeholder="Email" required>
+					</div>
+					<div class="form-group mb-3">
+					    <label for="formGroupExampleInput2">Password</label>
+					    <input type="Password" name="password" class="form-control" id="formGroupExampleInput2" placeholder="Password" required>
+					</div>
+					<button type="submit" name="login" class="btn btn-primary mb-2" id="submit">Log In</button>
+					<a href="#">Forget Password?</a>
+					<a href="#"  data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#register">Sign Up</a>
+				</form>
+      		</div>
+    	</div>
+  	</div>
+</div>
+
+<!-- Profile Edit Start From Here -->
+<!-- Modal For Edit Name Start From Here -->
+<div class="modal fade" id="name" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Name</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+      		<div class="modal-body">
+      			<div class="input-group mb-3">
+					<div class="input-group-prepend">
+				    	<span class="input-group-text">First Name</span>
+				  	</div>
+				  	<input type="text" name="fname" class="form-control" placeholder="First Name" required>
+				</div>
+
+				<div class="input-group">
+				  	<div class="input-group-prepend">
+				    	<span class="input-group-text">Last Name</span>
+				  	</div>
+				  	<input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+				</div>
+      		</div>
+      		<div class="modal-footer">
+		        <button type="submit" name="editname" class="btn btn-primary">Save changes</button>
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      		</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Profile Picture Start From Here -->
+<div class="modal fade" id="proImg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Upload Profile Picture</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST" enctype="multipart/form-data">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+					  	<div class="input-group-prepend">
+					    	<span class="input-group-text">Upload Image</span>
+					  	</div>
+					  	<div class="custom-file">
+					    	<input type="file" name="proImg" class="custom-file-input" id="inputGroupFile2">
+					    	<label class="custom-file-label" for="inputGroupFile2">Choose file</label>
+					  	</div>
+					</div>
+	      		</div>
+      			<div class="modal-footer">
+			        <button type="submit" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Occupation Start From Here -->
+<div class="modal fade" id="job" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Occupation</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Occupation</span>
+						</div>
+						<input type="text" name="job" class="form-control" placeholder="Occupation" required>
+					</div>
+	      		</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="edituserjob" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit E-mail Start From Here -->
+<div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Email</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/profile.update.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">E-mail</span>
+						</div>
+						<input type="email" name="email" class="form-control" placeholder="E-mail" required>
+					</div>
+	      		</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="submit" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Phone Number Start From Here -->
+<div class="modal fade" id="phone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Phone Number</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Phone Number</span>
+						</div>
+						<input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+					</div>
+	      		</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="edituserphone" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Gender Start From Here -->
+<div class="modal fade" id="gender" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Gender</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="inputGroupSelect3">Gender</label>
+						  	</div>
+						  	<select class="custom-select" name="gender" id="inputGroupSelect3" required>
+							    <option>Choose...</option>
+				        		<option value="Male">Male</option>
+				        		<option value="Female">Female</option>
+						  	</select>
+						</div>
+	      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editUserGender" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Date of Birth Start From Here -->
+<div class="modal fade" id="dob" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Date of Birth</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Date of Birth</span>
+						</div>
+						<input type="date" name="dob" class="form-control" placeholder="Date of Birth" required>
+					</div>
+	      		</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="edituserdob" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Current Address Start From Here -->
+<div class="modal fade" id="cAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Current Address</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="form-group mb-3">
+			    		<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="inputGroupSelect4">District</label>
+						  	</div>
+						  	<select class="custom-select" name="cdistrict" id="inputGroupSelect4" required>
+							    <option>Choose...</option>
+				        		<option value="Dhaka">Dhaka</option>
+				        		<option value="Chittagong">Chittagong</option>
+				        		<option value="Ghazipur">Ghazipur</option>
+				        		<option value="Tangail">Tangail</option>
+						  	</select>
+						</div>
+					</div>
+
+					<div class="form-group mb-3">
+				  		<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="inputGroupSelect5">Thana</label>
+						  	</div>
+						  	<select class="custom-select" name="cthana" id="inputGroupSelect5" required>
+							    <option>Choose...</option>
+				        		<option value="Dhaka">Tejgoan</option>
+				        		<option value="Chittagong">Dhamrai</option>
+				        		<option value="Mirzapur">Mirzapur</option>
+						  	</select>
+						</div>
+				  	</div>
+
+			  		<div class="form-group mb-3">
+			    		<div class="input-group">
+						  <div class="input-group-prepend">
+						    <label class="input-group-text" for="inputGroupSelect7">Area</label>
+						  </div>
+						  	<select class="custom-select" name="carea" id="inputGroupSelect7" required>
+							    <option>Choose...</option>
+				        		<option value="Gorai">Gorai</option>
+				        		<option value="Uttara">Uttara</option>
+				        		<option value="Dhanmondi">Dhanmondi</option>
+						  </select>
+						</div>
+					</div>
+
+					<div class="form-group">
+			  			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="address">Address</span>
+						  	</div>
+						  	<input type="text" name="caddress" class="form-control" aria-label="Default" aria-describedby="address" placeholder="Address..." required>
+						</div>
+			  		</div>
+
+			  		<div class="form-group">
+			  			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="czip">Zip Code</span>
+						  	</div>
+						  	<input type="number" name="czip" class="form-control" aria-label="Default" aria-describedby="czip" placeholder="Postal Code...." required>
+						</div>
+			  		</div>
+	      		</div>
+
+      			<div class="modal-footer">
+			        <button type="submit" name="edituserCaddress" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Permanent Address Start From Here -->
+<div class="modal fade" id="pAddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Permanent Address</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="form-group mb-3">
+			    		<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="inputGroupSelect">District</label>
+						  	</div>
+						  	<select class="custom-select" name="pdistrict" id="inputGroupSelect" required>
+							    <option>Choose...</option>
+				        		<option value="Dhaka">Dhaka</option>
+				        		<option value="Tangail">Tangail</option>
+				        		<option value="Chittagong">Chittagong</option>
+				        		<option value="Ghazipur">Ghazipur</option>
+						  	</select>
+						</div>
+					</div>
+
+					<div class="form-group mb-3">
+				  		<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="inputGroupSelec">Thana</label>
+						  	</div>
+						  	<select class="custom-select" name="pthana" id="inputGroupSelec" required>
+							    <option>Choose...</option>
+				        		<option value="Tejgoan">Tejgoan</option>
+				        		<option value="Dhamrai">Dhamrai</option>
+				        		<option value="Mirzapur">Mirzapur</option>
+						  	</select>
+						</div>
+				  	</div>
+
+			  		<div class="form-group mb-3">
+			    		<div class="input-group">
+						  <div class="input-group-prepend">
+						    <label class="input-group-text" for="inputGroupSelect9">Area</label>
+						  </div>
+						  	<select class="custom-select" name="parea" id="inputGroupSelect9" required>
+							    <option>Choose...</option>
+				        		<option value="Gorai">Gorai</option>
+				        		<option value="Uttara">Uttara</option>
+				        		<option value="TejkoniPara">TejkoniPara</option>
+				        		<option value="Dhanmondi">Dhanmondi</option>
+						  </select>
+						</div>
+					</div>
+
+					<div class="form-group">
+			  			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="paddress">Address</span>
+						  	</div>
+						  	<input type="text" name="paddress" class="form-control" aria-label="Default" aria-describedby="paddress" placeholder="Address..." required>
+						</div>
+			  		</div>
+			  		<div class="form-group">
+			  			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="pzip">Zip Code</span>
+						  	</div>
+						  	<input type="number" name="pzip" class="form-control" aria-label="Default" aria-describedby="pzip" placeholder="Postal code..." required>
+						</div>
+			  		</div>
+			  		<div class="form-check">
+					  	<input class="form-check-input" type="checkbox" name="putc" id="defaultChec">
+					  	<label class="form-check-label" for="defaultChec">
+					   	Same as Current Address
+					  	</label>
+					</div>
+	      		</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="edituserPaddress" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+<!-- Profile Edit End Here -->
+
+<!-- My POST Edit Modal Start From Here -->
+<!-- Modal For Edit Post Title Start From Here -->
+<div class="modal fade" id="etitle" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Post Title</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+					  	<div class="input-group-prepend">
+					    	<span class="input-group-text" id="etitle">Post Title</span>
+					  	</div>
+					  	<input type="text" name="title" class="form-control" aria-label="Default" aria-describedby="inputGroup0001" placeholder="Post Title" required>
+					</div>
+      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="edittitle" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Rent Amaount Start From Here -->
+<div class="modal fade" id="rprice" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Rent Amount</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+					  	<div class="input-group-prepend">
+					    	<span class="input-group-text" id="etitle">Edit Rent Amount</span>
+					  	</div>
+					  	<input type="number" name="rent" class="form-control" aria-label="Default" aria-describedby="inputGroup0002" placeholder="Rent Amount" required>
+					</div>
+      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editrent" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+
+</div>
+
+<!-- Modal For Edit Discription Start From Here -->
+<div class="modal fade" id="ediscrip" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Discription</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="form-group">
+				      	<div class="input-group mb-3">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text">Description</span>
+						  	</div>
+						  	<textarea class="form-control" name="description" id="inputGroup0004" placeholder="Write something about your post..." rows="4" required></textarea>
+						</div>
+				    </div>
+      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editDescription" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Owner Name Start From Here -->
+<div class="modal fade" id="eOname" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Owner Name</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+					  	<div class="input-group-prepend">
+					    	<span class="input-group-text" id="inputGroup0005">Edit Name</span>
+					  	</div>
+					  	<input type="text" name="eOname" class="form-control" aria-label="Default" aria-describedby="inputGroup0005" placeholder="Name" required>
+					</div>
+      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editPostName" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Phone Number Start From Here -->
+<div class="modal fade" id="ephone" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Phone Number</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+					  	<div class="input-group-prepend">
+					    	<span class="input-group-text" id="inputGroup0006">Edit Phone Number</span>
+					  	</div>
+					  	<input type="number" name="ephone" class="form-control" aria-label="Default" aria-describedby="inputGroup0006" placeholder="Phone Number" required>
+					</div>
+      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editPhoneNumber" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Address Start From Here -->
+<div class="modal fade" id="eaddress" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Address</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="form-group mb-3">
+			    		<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="input000012">District</label>
+						  	</div>
+						  	<select class="custom-select" name="district" id="input000012" required>
+							    <option>Choose...</option>
+				        		<option value="Dhaka">Dhaka</option>
+				        		<option value="Chittagong">Chittagong</option>
+				        		<option value="Ghazipur">Ghazipur</option>
+						  	</select>
+						</div>
+					</div>
+
+					<div class="form-group mb-3">
+				  		<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="input000011">Upazila</label>
+						  	</div>
+						  	<select class="custom-select" name="thana" id="input000011" required>
+							    <option>Choose...</option>
+				        		<option value="Dhaka">Tejgoan</option>
+				        		<option value="Chittagong">Dhamrai</option>
+				        		<option value="Ghazipur">Mirzapur</option>
+						  	</select>
+						</div>
+				  	</div>
+
+			  		<div class="form-group mb-3">
+			    		<div class="input-group">
+						  <div class="input-group-prepend">
+						    <label class="input-group-text" for="input000010">Area</label>
+						  </div>
+						  	<select class="custom-select" name="area" id="input000010" required>
+							    <option>Choose...</option>
+				        		<option value="Gorai">Islamic</option>
+				        		<option value="Uttara">Uttara</option>
+				        		<option value="Dhanmondi">Dhanmondi</option>
+						  </select>
+						</div>
+					</div>
+
+					<div class="form-group">
+			  			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="eaddress">Address</span>
+						  	</div>
+						  	<input type="text" name="address" class="form-control" aria-label="Default" aria-describedby="address" placeholder="Address..." required>
+						</div>
+			  		</div>
+
+			  		<div class="form-group">
+			  			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="zip">Zip Code</span>
+						  	</div>
+						  	<input type="number" name="zip" class="form-control" aria-label="Default" aria-describedby="zip" placeholder="Postal Code...." required>
+						</div>
+			  		</div>
+      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editPostAddress" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Type of Rent Start From Here -->
+<div class="modal fade" id="tOFr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Type of Rent</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="input02">Type of Rent</label>
+						  	</div>
+						  	<select class="custom-select" name="tOFr" id="input02" required>
+							    <option>Choose...</option>
+				        		<option value="House">House</option>
+					        		<option value="Store">Store</option>
+					        		<option value="Flat">Flat</option>
+					        		<option value="Room">Room</option>
+					        		<option value="Sublet">Sublet</option>
+					        		<option value="Seat">Seat</option>
+					        		<option value="Hostel">Hostel</option>
+					        		<option value="office">Office</option>
+					        		<option value="Other">Others</option>
+						  	</select>
+						</div>
+	      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editTypeOfRent" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Area type Start From Here -->
+<div class="modal fade" id="pType" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Area Type</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="input01">Area Type</label>
+						  	</div>
+						  	<select class="custom-select" name="pType" id="input01" required>
+							    <option>Choose...</option>
+				        		<option value="Commercial">Commercial</option>
+				        		<option value="Residential">Residential</option>
+						  	</select>
+						</div>
+	      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editTypeOfArea" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Size Start From Here -->
+<div class="modal fade" id="sizeofp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Size</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="form-group">
+			  			<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="inputGroup03">Size (sqf)</span>
+						  	</div>
+						  	<input type="number" name="size" class="form-control" aria-label="Default" aria-describedby="inputGroup03" placeholder="ex - 1000">
+						</div>
+			  		</div>
+	      		</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editSize" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Rental Terms Start From Here -->
+<div class="modal fade" id="rentTerm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Rental Terms</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="form-group mb-3">
+			    		<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="inputSelect06">Religion</label>
+						  	</div>
+						  	<select class="custom-select" name="religion" id="inputSelect06" >
+							    <option value="">Choose...</option>
+							    <option value="Anyone">Anyone</option>
+				        		<option value="Islamic">Islamic</option>
+				        		<option value="Hindu">Hindu</option>
+				        		<option value="Christian">Christian</option>
+				        		<option value="Budhist">Budhist</option>
+				        		<option value="Others">Others</option>
+						  	</select>
+						</div>
+					</div>
+	      			<div class="form-group">
+			    		<div class="input-group">
+						  	<div class="input-group-prepend">
+						    	<label class="input-group-text" for="inputGroupect03">Allowed People</label>
+						  	</div>
+						  	<select class="custom-select" name="allowed_people" id="inputGroupect04" >
+							    <option value="">Choose...</option>
+				        		<option value="For Business">For Business</option>
+				        		<option value="Family">Family</option>
+				        		<option value="Male Student">Family</option>
+				        		<option value="Female Student">Female Student</option>
+				        		<option value="Student">Student</option>
+				        		<option value="Male Job Holder">Male Job Holder</option>
+				        		<option value="Female Job Holder">Female Job Holder</option>
+				        		<option value="Job Holder">Job Holder</option>
+				        		<option value="Others">Others</option>
+						  	</select>
+						</div>
+					</div>
+      			</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editTerms" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- Modal For Edit Facility Start From Here -->
+<div class="modal fade" id="facility" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h3 class="modal-title">Edit Facility</h3>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<form action="func/action.php" method="POST">
+	      		<div class="modal-body">
+	      			<div class="row">
+	      				<div class="col-md-4">
+							<div class="form-check">
+							  	<input class="form-check-input" type="checkbox" name="f1" value="24 Hours Water" id="default001">
+							  	<label class="form-check-label" for="default001">
+							   	24 Hours Water
+							  	</label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input" type="checkbox" name="f2" value="24 Hours Electricity" id="default002">
+							  	<label class="form-check-label" for="default002">
+							   	24 Hours Electricity
+							  	</label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input" type="checkbox" name="f3" value="Attached Bath" id="default003">
+							  	<label class="form-check-label" for="default003">
+							   	Attached Bath
+							  	</label>
+							</div>
+			      		</div>
+			      		<div class="col-md-4">
+							<div class="form-check">
+							  	<input class="form-check-input" name="f4" type="checkbox" value="Balcony" id="default004">
+							  	<label class="form-check-label" for="default004">
+							   	Balcony
+							  	</label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input" type="checkbox" name="f5" value="	Wifi 24 Hours" id="default005">
+							  	<label class="form-check-label" for="default005">
+							   	Wifi 24 Hours
+							  	</label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input" type="checkbox" name="f6" value="Fully Tiled" id="default006">
+							  	<label class="form-check-label" for="default006">
+							   	Fully Tiled
+							  	</label>
+							</div>
+			      		</div>
+			      		<div class="col-md-4">
+							<div class="form-check">
+							  	<input class="form-check-input" type="checkbox" name="f7" value="Non Tiles" id="default007">
+							  	<label class="form-check-label" for="default007">
+							   	Non Tiles
+							  	</label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input" type="checkbox" name="f8" value="Food Facility" id="default008">
+							  	<label class="form-check-label" for="default008">
+							   	Food Facility
+							  	</label>
+							</div>
+							<div class="form-check">
+							  	<input class="form-check-input" type="checkbox" name="f9" value="Pure Drinking Water" id="default009">
+							  	<label class="form-check-label" for="default009">
+							   	Pure Drinking Water
+							  	</label>
+							</div>
+						</div>
+					</div>
+	      		</div>
+      			<div class="modal-footer">
+			        <button type="submit" name="editFacilities" class="btn btn-primary">Save changes</button>
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      			</div>
+      		</form>
+    	</div>
+  	</div>
+</div>
+
+<!-- New Post Modal Start From Here -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  	<div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	    	<div class="modal-header">
+		        <h3 class="modal-title">New Post</h3>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          	<span aria-hidden="true">&times;</span>
+		        </button>
+		    </div>
+		    <div class="modal-body">
+		    	<form action="func/action.php" method="POST" enctype="multipart/form-data">
+					<div class="form-row">
+				  		<div class="input-group col-md-6 mb-3">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="title">Post Title</span>
+						  	</div>
+						  	<input type="text" name="title" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Post Title" required>
+						</div>
+
+						<div class="input-group col-md-6 mb-3">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="inputGroup-sizing-default">Rent Amount</span>
+						  	</div>
+						  	<input type="number" name="rent" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Rent Amount" required>
+						</div>
+
+				    	<div class="input-group col-md-6 mb-3">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="owner_name">Owner Name</span>
+						  	</div>
+						  	<input type="text" name="owner_name" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Owner Name" required>
+						</div>
+
+						<div class="input-group col-md-6 mb-3">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text" id="phone_number">Phone Number</span>
+						  	</div>
+						  	<input type="tel" name="phone_number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Phone Number" required>
+						</div>
+
+					    <div class="form-group col-md-6 mb-3">
+				    		<div class="input-group">
+							  	<div class="input-group-prepend">
+							    	<label class="input-group-text" for="inputGroupSelect01">Post Type</label>
+							  	</div>
+							  	<select class="custom-select" name="p_type" id="inputGroupSelect01" required>
+							    	<option>Choose...</option>
+				        			<option value="Commercial">Commercial</option>
+				        			<option value="Residential">Residential</option>
+							  	</select>
+							</div>
+						</div>
+
+						<div class="form-group col-md-6 mb-3">
+				    		<div class="input-group ">
+							  	<div class="input-group-prepend">
+							    	<label class="input-group-text" for="inputGroupSelect02">Type of Rent</label>
+							  	</div>
+							  	<select class="custom-select" name="type_of_Rent" id="inputGroupSelect02" required>
+								    <option>Choose...</option>
+					        		<option value="House">House</option>
+					        		<option value="Store">Store</option>
+					        		<option value="Flat">Flat</option>
+					        		<option value="Room">Room</option>
+					        		<option value="Sublet">Sublet</option>
+					        		<option value="Seat">Seat</option>
+					        		<option value="Hostel">Hostel</option>
+					        		<option value="office">Office</option>
+					        		<option value="Other">Others</option>
+							  	</select>
+							</div>
+						</div>
+
+						<div class="form-group col-md-6 mb-3">
+				    		<div class="input-group">
+							  	<div class="input-group-prepend">
+							    	<label class="input-group-text" for="inputGroupSelect03">Allowed People</label>
+							  	</div>
+							  	<select class="custom-select" name="allowed_pepole" id="inputGroupSelect04" required>
+								    <option>Choose...</option>
+					        		<option value="For Business">For Business</option>
+					        		<option value="Family">Family</option>
+					        		<option value="Male Student">Family</option>
+					        		<option value="Female Student">Female Student</option>
+					        		<option value="Student">Student</option>
+					        		<option value="Male Job Holder">Male Job Holder</option>
+					        		<option value="Female Job Holder">Female Job Holder</option>
+					        		<option value="Job Holder">Job Holder</option>
+					        		<option value="Others">Others</option>
+							  	</select>
+							</div>
+						</div>
+
+						<div class="input-group col-md-6 mb-3">
+						  	<div class="input-group-prepend">
+						    	<span class="input-group-text">Upload Images</span>
+						  	</div>
+						  	<div class="custom-file">
+						    	<input type="file" name="images" class="custom-file-input" id="inputGroupFile011" multiple>
+						    	<label class="custom-file-label" for="inputGroupFile011">Choose file</label>
+						  	</div>
+						</div>
+
+					    <div class="form-group col-md-6 mb-0">
+					      	<div class="input-group mb-3">
+							  	<div class="input-group-prepend">
+							    	<span class="input-group-text">Description</span>
+							  	</div>
+							  	<textarea class="form-control" name="description" id="description" placeholder="Write something about your post..." rows="4" required></textarea>
+							</div>
+					    </div>
+
+				  		<div class="col-md-6">
+				  			<div class="form-group mb-3">
+					    		<div class="input-group">
+								  	<div class="input-group-prepend">
+								    	<label class="input-group-text" for="inputGroupSelect06">Religion</label>
+								  	</div>
+								  	<select class="custom-select" name="religion" id="inputGroupSelect06" required>
+									    <option>Choose...</option>
+									    <option value="Anyone">Anyone</option>
+						        		<option value="Islamic">Islamic</option>
+						        		<option value="Hindu">Hindu</option>
+						        		<option value="Christian">Christian</option>
+						        		<option value="Budhist">Budhist</option>
+						        		<option value="Others">Others</option>
+								  	</select>
+								</div>
+							</div>
+
+					  		<div class="form-group">
+					  			<div class="input-group">
+								  	<div class="input-group-prepend">
+								    	<span class="input-group-text" id="inputGroup-sizing-default">Size (sqf)</span>
+								  	</div>
+								  	<input type="number" name="size" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="ex - 1000">
+								</div>
+					  		</div>
+				  		</div>
+
+				  		<div class="form-group col-md-6 mb-3">
+				    		<div class="input-group">
+							  	<div class="input-group-prepend">
+							    	<label class="input-group-text" for="inputGroupSelect07">District</label>
+							  	</div>
+							  	<select class="custom-select" name="district" id="inputGroupSelect07" required>
+								    <option>Choose...</option>
+					        		<option value="Dhaka">Dhaka</option>
+					        		<option value="Chittagong">Chittagong</option>
+					        		<option value="Ghazipur">Ghazipur</option>
+							  	</select>
+							</div>
+						</div>
+
+						<div class="form-group col-md-6 mb-3">
+					  		<div class="input-group">
+							  	<div class="input-group-prepend">
+							    	<label class="input-group-text" for="inputGroupSelect08">Thana</label>
+							  	</div>
+							  	<select class="custom-select" name="thana" id="inputGroupSelect08" required>
+								    <option>Choose...</option>
+					        		<option value="Dhaka">Tejgoan</option>
+					        		<option value="Chittagong">Dhamrai</option>
+					        		<option value="Ghazipur">Mirzapur</option>
+							  	</select>
+							</div>
+					  	</div>
+
+				  		<div class="form-group col-md-6 mb-3">
+				    		<div class="input-group">
+							  <div class="input-group-prepend">
+							    <label class="input-group-text" for="inputGroupSelect09">Area</label>
+							  </div>
+							  	<select class="custom-select" name="area" id="inputGroupSelect09" required>
+								    <option>Choose...</option>
+					        		<option value="Gorai">Islamic</option>
+					        		<option value="Uttara">Uttara</option>
+					        		<option value="Dhanmondi">Dhanmondi</option>
+							  </select>
+							</div>
+						</div>
+
+						<div class="form-group col-md-6 mb-3">
+				  			<div class="input-group">
+							  	<div class="input-group-prepend">
+							    	<span class="input-group-text" id="address">Address</span>
+							  	</div>
+							  	<input type="text" name="address" class="form-control" aria-label="Default" aria-describedby="address" placeholder="Address..." required>
+							</div>
+				  		</div>
+
+						<div class="row col-12">
+							<div class="col-md-2">
+								Facilities
+							</div>
+				      		<div class="col-md-3">
+								<div class="form-check">
+								  	<input class="form-check-input" type="checkbox" name="f1" value="24 Hours Water" id="defaultCheck1">
+								  	<label class="form-check-label" for="defaultCheck1">
+								   	24 Hours Water
+								  	</label>
+								</div>
+								<div class="form-check">
+								  	<input class="form-check-input" type="checkbox" name="f2" value="24 Hours Electricity" id="defaultCheck2">
+								  	<label class="form-check-label" for="defaultCheck2">
+								   	24 Hours Electricity
+								  	</label>
+								</div>
+								<div class="form-check">
+								  	<input class="form-check-input" type="checkbox" name="f3" value="Attached Bath" id="defaultCheck3">
+								  	<label class="form-check-label" for="defaultCheck3">
+								   	Attached Bath
+								  	</label>
+								</div>
+				      		</div>
+				      		<div class="col-md-3">
+								<div class="form-check">
+								  	<input class="form-check-input" name="f4" type="checkbox" value="Balcony" id="defaultCheck4">
+								  	<label class="form-check-label" for="defaultCheck4">
+								   	Balcony
+								  	</label>
+								</div>
+								<div class="form-check">
+								  	<input class="form-check-input" type="checkbox" name="f5" value="	Wifi 24 Hours" id="defaultCheck5">
+								  	<label class="form-check-label" for="defaultCheck5">
+								   	Wifi 24 Hours
+								  	</label>
+								</div>
+								<div class="form-check">
+								  	<input class="form-check-input" type="checkbox" name="f6" value="Fully Tiled" id="defaultCheck6">
+								  	<label class="form-check-label" for="defaultCheck6">
+								   	Fully Tiled
+								  	</label>
+								</div>
+				      		</div>
+				      		<div class="col-md-4">
+								<div class="form-check">
+								  	<input class="form-check-input" type="checkbox" name="f7" value="Non Tiles" id="defaultCheck7">
+								  	<label class="form-check-label" for="defaultCheck7">
+								   	Non Tiles
+								  	</label>
+								</div>
+								<div class="form-check">
+								  	<input class="form-check-input" type="checkbox" name="f8" value="Food Facility" id="defaultCheck8">
+								  	<label class="form-check-label" for="defaultCheck8">
+								   	Food Facility
+								  	</label>
+								</div>
+								<div class="form-check">
+								  	<input class="form-check-input" type="checkbox" name="f9" value="Pure Drinking Water" id="defaultCheck9">
+								  	<label class="form-check-label" for="defaultCheck9">
+								   	Pure Drinking Water
+								  	</label>
+								</div>
+				      		</div>
+				      	</div>
+					</div>
+					<div class="form-check">
+					  	<input class="form-check-input" type="checkbox" name="atc" value="Accept" id="defaultCheck10" required>
+					  	<label class="form-check-label" for="defaultCheck10">
+					   	Accept accept <a href="#" style="color:red !important;">terms and conditions</a> 
+					  	</label>
+					</div>
+				  	<button type="submit" name="newpost" class="btn btn-primary mb-3">Request For Publish</button>
+				</form>
+  			</div>
+	    </div>
+  	</div>
+</div>
+<!-- New Post End Here -->

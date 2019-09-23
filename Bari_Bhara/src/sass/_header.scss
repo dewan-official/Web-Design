@@ -1,0 +1,177 @@
+// Header Style
+header {
+	width: 100%;
+	max-height: 100px;
+	min-height: 50px;
+	background-color: $color-3;
+	padding: 10px 0px;
+	// Brand Part Style
+	.brandImg {
+		width:90px;
+		height:100%;
+		float:left;
+		img {
+			max-width:80px;
+			min-width:60px;
+		}
+	}
+	.brandTitle {
+		width:100%;
+		height: 100%;
+		padding-top: 18px;
+	}
+	// User Part Style
+	.userpart {
+		padding: 0px;
+		.menu_list {
+			margin: 0;
+			padding: 0;
+			>li {
+				list-style: none;
+				display: inline-block;
+				float:right;
+				margin: 0px 5px 10px 0px;
+				border-radius: 5px;
+				border: 1px solid $color-4;
+				padding: 10px 12px !important;
+				&:hover {
+					background-color: $color-1;
+				}
+				a {
+					color: $color-4;
+					&:hover {
+						color: $color-5;
+					}
+				}
+			}
+		}
+		.profile {
+			position: relative;
+			float: right;
+			margin: 0;
+			padding: 0 !important;
+			width:100%;
+			&:hover .userMenu {
+				display: block;
+			}
+			.mt-c {
+				margin-top: 12px !important;
+			}
+			.plist {
+				position:relative;
+				list-style: none;
+				display: inline-block;
+				float:right;
+				margin: 1px 5px 5px 0px;
+				border-radius: 0px;
+				border: none;
+				padding: 0;
+				color: $color-5;
+				font-size: 18px;
+				cursor: pointer;
+				&:hover {
+					background-color: $color-3;
+				}
+				.profileImg {
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+				}
+			}
+			.userMenu {
+				position: absolute;
+				top: 100%;
+				right: 0;
+				padding: 10px 0px;
+				margin: 0;
+				background-color: $color-1;
+				border-top: -0.9px solid $color-4;
+				border-bottom: -0.9px solid $color-4;
+				z-index: 1001;
+				transition: all 0.9s;
+				display: none;
+				&:before {
+					content: "";
+					position: absolute;
+					bottom: 100%;
+					right: 10%;
+					border: 10px solid transparent;
+					border-bottom-color: $color-1;
+					z-index: 1002;
+				}
+				.userMenuItem a {
+					color: $color-4;
+					display: block;
+					font-size: 16px;
+					padding: 5px 20px 5px 5px;
+					border-bottom: -0.9px solid $color-4;
+					&:hover {
+						background-color: $color-3;
+						color: $color-5;
+					}
+				}
+			}
+		}
+	}
+	.search {
+		clear: both;
+		width:100%;
+		input {
+			background-color: $color-1;
+			padding: 5px 10px;
+			width: 80%;
+			height: 30px;
+			border: 1px solid $color-4;
+			color: $color-5;
+			border-radius: 5px 0px 0px 5px;
+			font-size: 14px;
+			margin:0;
+
+		}
+		button {
+			width:19%;
+			margin-left: -5px;
+			margin-bottom: -5px;
+			padding: 0px 8px;
+			height: 30px;
+			border: 1px solid $color-4;
+			background-color: $color-2;
+			border-radius: 0px 5px 5px 0px;
+			font-size: 14px;
+			color: $color-4;
+			&:hover {
+				background-color: $color-1;
+				color: $color-5;
+			}
+		}
+	}
+}
+@media (max-width: 991px) {
+	// For Small Device Brand Brand Title Display None
+	.brandTitle {
+		display: none;
+	}
+}
+@media (max-width: 576px) {
+	.userpart {
+		padding: 20px 0px 0px 0px !important;
+		
+	}.search {
+			display: none;
+		}
+}
+// Nav Style
+.navCustom {
+	background-color: $color_1;
+	position: relative;
+	height: 55px;
+	margin-bottom: 10px;
+	nav {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background-color: $color_2;
+		z-index: 1000;
+	}
+}

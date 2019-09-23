@@ -1,0 +1,67 @@
+// USER LOG IN SQL
+CREATE TABLE user_login(
+	user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	user_fname VARCHAR(25) NOT NULL,
+	user_lname VARCHAR(25) NOT NULL,
+	user_gender VARCHAR(6),
+	user_dob VARCHAR(20),
+	user_caddress VARCHAR(100),
+	user_carea VARCHAR(25),
+	user_cthana VARCHAR(25),
+	user_cdistrict VARCHAR(25),
+	user_czip INT(4),
+	user_paddress VARCHAR(100),
+	user_parea VARCHAR(25),
+	user_pthana VARCHAR(25),
+	user_pdistrict VARCHAR(25),
+	user_pzip INT(4),
+	user_image LONGBLOB,
+	user_phone VARCHAR(11),
+	user_job VARCHAR(50),
+	user_email VARCHAR(50) NOT NULL,
+	user_pwd VARCHAR(255) NOT NULL,
+	resetcode VARCHAR(8),
+	currentTime VARCHAR(100) NOT NULL,
+	conditions VARCHAR(6) NOT NULL
+)
+// NEW POST TABLE SQL QUERY
+CREATE TABLE newpost(
+	post_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	user_id INT NOT NULL,
+	post_title VARCHAR(100),
+	post_rent INT(7) NOT NULL,
+	post_owner_name VARCHAR(30) NOT NULL,
+	post_phone_number INT(11) NOT NULL,
+	post_p_type VARCHAR(25) NOT NULL,
+	post_type_of_Rent VARCHAR(25) NOT NULL,
+	post_allowed_people VARCHAR(25) NOT NULL,
+	post_description VARCHAR(25) NOT NULL,
+	post_religion VARCHAR(15) NOT NULL,
+	post_size INT(7),
+	post_district VARCHAR(25) NOT NULL,
+	post_thana VARCHAR(25) NOT NULL,
+	post_area VARCHAR(35) NOT NULL,
+	post_address VARCHAR(60) NOT NULL,
+	post_zip INT(4),
+	post_f1 VARCHAR(3),
+	post_f2 VARCHAR(3),
+	post_f3 VARCHAR(3),
+	post_f4 VARCHAR(3),
+	post_f5 VARCHAR(3),
+	post_f6 VARCHAR(3),
+	post_f7 VARCHAR(3),
+	post_f8 VARCHAR(3),
+	post_f9 VARCHAR(3),
+	post_time VARCHAR(50) NOT NULL,
+	post_access_mode VARCHAR(3) NOT NULL,
+	post_active VARCHAR(6) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES user_login(user_id)
+)
+// POST IMAGE SQL
+CREATE TABLE postimage(
+	image_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	post_id INT NOT NULL,
+	user_id INT NOT NULL,
+	image_path LONGBLOB,
+	
+)

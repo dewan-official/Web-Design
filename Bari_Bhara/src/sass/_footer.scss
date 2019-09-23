@@ -1,0 +1,28 @@
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	// background-color: $color-5;
+	div {
+		position: absolute;
+		left: 0;
+		bottom: -100px;
+		background-color: $color-1;
+		width: 100%;
+		height: 50px;
+		padding: 10px;
+		transition: all 0.9s;
+	}
+	// &:hover div{
+	// 	animation: hide 1s;
+	// }
+}
+@keyframes hide {
+	from {
+		bottom: -100px;
+	} to {
+		bottom: 0px;
+	}
+}

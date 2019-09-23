@@ -1,0 +1,68 @@
+h1 {
+	font-family: 'Limelight', cursive;
+	font-size: 30px;
+}
+h2 {
+	font-family: 'Amaranth', sans-serif;
+	font-size: 27px;
+}
+h3 {
+	font-family: 'Amaranth', sans-serif;
+	font-size: 25px;
+}
+h4 {
+	font-family: 'Paprika', cursive;
+	font-size: 16px;
+}
+h5 {
+	font-family: 'Paprika', cursive;
+	font-size: 14px;
+}
+a {
+	color: $color-4 !important;
+	cursor: pointer;
+	&:hover {
+		text-decoration: none;
+		color: $color-5 !important;
+	}
+}
+p {
+	line-height: 1.2;
+	color: $color-4;
+}
+li {
+	list-style-type: none;
+	display: block;
+}
+ul,li {
+	padding: 0 !important;
+}
+hr {
+	margin: 3px 0px;
+}
+h1, h2, h3, h4, h5, a, li {
+	line-height: 1;
+	margin: 0;
+}
+p, li, td {
+	font-family: 'Kanit', sans-serif;
+	font-size: 16px;
+	font-weight: regular;
+}
+.c-1 {
+	color: $color-1;
+}.c-2 {
+	color: $color-2;
+}.c-3 {
+	color: $color-3;
+}.c-4 {
+	color: $color-4;
+}.c-5 {
+	color: $color-5;
+}.bc-1 {
+	background: $color-1;
+}
+.input-group-text, .custom-select {
+	background: $color-1;
+	color: $color-5;
+}
